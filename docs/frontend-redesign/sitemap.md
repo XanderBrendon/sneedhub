@@ -4,6 +4,7 @@ A proposed structure for a redesigned Sneed Hub frontend. It is built from the [
 
 - **Scope:** front end only. The structure reuses what the canisters already expose. Where a page needs something the backend doesn't offer yet, it says so (see [New pages the structure needs](#new-pages-the-structure-needs)).
 - **URLs are illustrative.** They show the shape: section prefixes, kebab-case, ids in the path, `new` for create flows, and tabs as path segments so every view can be linked.
+- **Domain and login:** the site moves to `sneedhub.app` (one origin, sections as the path prefixes below), and II logins derive from the new frontend canister's URL. See [Domain and login origin](domains-and-login-origin.md) before building login.
 - **Coverage:** all 159 current routes plus `btc.html` are placed in the [appendix](#appendix-where-every-current-route-goes). 118 pages survive (most at a new URL), 20 merge into another page, 7 split across pages, 9 old aliases become redirects, and 6 placeholders or broken pages are dropped.
 
 ## The structure at a glance
